@@ -1,0 +1,148 @@
+<!-- gallery.html (Gallery Page) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>Background</title>
+<body style="background-color:Chocolate;">
+ <body>
+<!-- khoza-logo-compact.svg - Perfect for website headers -->
+<svg width="250" height="100" viewBox="0 0 250 100" xmlns="http://www.w3.org/2000/svg">
+  <!-- Compact background -->
+  <rect width="250" height="100" rx="12" fill="#2C1810" opacity="0.95"/>
+  
+  <!-- Wood grain (scaled down) -->
+  <defs>
+    <pattern id="woodgrain" width="25" height="25" patternUnits="userSpaceOnUse">
+      <path d="M0 12 Q6 9 12 14 Q18 12 25 11 Q22 15 16 14 Q12 17 3 15 Z" fill="#8B4513" opacity="0.4"/>
+    </pattern>
+  </defs>
+  <rect width="250" height="100" fill="url(#woodgrain)"/>
+  
+  <!-- Compact text - tighter spacing -->
+  <text x="125" y="38" text-anchor="middle" font-family="'Montserrat', sans-serif" 
+        font-size="18" font-weight="700" fill="#F4E4BC" letter-spacing="0.8">KHOZA'S</text>
+  <text x="125" y="50" text-anchor="middle" font-family="'Montserrat', sans-serif" 
+        font-size="16" font-weight="600" fill="#D4AF37" letter-spacing="0.4">&amp; CRAFT</text>
+  <text x="125" y="62" text-anchor="middle" font-family="'Montserrat', sans-serif" 
+        font-size="12" font-weight="500" fill="#F4E4BC" letter-spacing="0.2">CARPENTRY</text>
+  
+  <!-- Smaller tagline -->
+  <text x="125" y="78" text-anchor="middle" font-family="'Montserrat', sans-serif" 
+        font-size="9" font-weight="400" fill="#DEB887" letter-spacing="0.3">Pure Wood, Pure Craft</text>
+  
+  <!-- MINI HAMMER (scaled perfectly) -->
+  <g transform="translate(25, 25)">
+    <!-- Tiny hammer head -->
+    <rect x="0" y="0" width="14" height="6" rx="1" fill="#C0C0C0" stroke="#A9A9A9" stroke-width="0.8"/>
+    <path d="M18 0 Q21 2 20 6 Q18 7 16 7 L14 7 Z" fill="#C0C0C0" stroke="#A9A9A9" stroke-width="0.8"/>
+    <!-- Handle -->
+    <rect x="6" y="5" width="4" height="18" rx="2" fill="#8B4513"/>
+    <rect x="5" y="20" width="6" height="3" rx="1.5" fill="#D2691E"/>
+    <!-- Detail -->
+    <circle cx="3" cy="3" r="0.8" fill="#696969"/>
+  </g>
+</svg>
+    <!-- Basic meta tags for character encoding and responsive viewport -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Navigation menu - FIXED: Moved from <head> to <body> and corrected <navy> tag -->
+    <!-- Note: This should actually be placed in <body> after opening <body> tag -->
+    
+    <!-- External stylesheets and fonts -->
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Page title for SEO and browser tab -->
+    <title>Khoza's Craft & Carpentry - Gallery</title>
+</head>
+
+<body>
+    <!-- Navigation menu - CORRECTLY PLACED HERE -->
+    <nav class="navbar">
+        <div class="button-list">
+            <button><a href="index.html">Home</a></button>
+            <button><a href="Services.html">Services</a></button>
+            <button><a href="Gallery.html">Gallery</a></button>
+            <button><a href="Contact_Us.html">Contact Us</a></button>
+            <button><a href="About_Us.html">About Us</a></button>
+        </div>
+    </nav>
+
+    <!-- Header section with logo and branding -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>Khoza's & Craft Carpentry</h1>
+                <p class="slogan">Pure Wood, Pure Craft</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main content area -->
+    <main>
+        <!-- Page header/hero section -->
+        <section class="page-header">
+            <div class="container">
+                <h1>Our Work</h1>
+                <p>Take a look at what we have built so far</p>
+            </div>
+        </section>
+
+        <!-- Gallery showcase section with categories -->
+        <section class="gallery-section">
+            <div class="container">
+                
+                <!-- Gallery Category 1: Bespoke Furniture -->
+                <div class="gallery-category">
+                    <h2>Bespoke Furniture</h2>
+                    <p class="category-description">Custom tables, desks</p>
+                    <img src="CustomTable.jpg" alt="Custom wooden table - bespoke furniture craftsmanship" width="500" height="450" class="gallery-image">
+                </div>
+                
+                <!-- Gallery Category 2: Kitchen Cupboards -->
+                <div class="gallery-category">
+                    <h2>Kitchen Cupboards</h2>
+                    <p class="category-description">Kitchen cabinets, chairs</p>
+                    <img src="KitchenCabinets.jpg" alt="Modern kitchen cabinets installation" width="500" height="450" class="gallery-image">
+                    <img src="Chairs.jpg" alt="Handcrafted wooden chairs" width="500" height="450" class="gallery-image">
+                </div>
+                
+                <!-- Gallery Category 3: Bookshelves -->
+                <div class="gallery-category">
+                    <h2>Bookshelves</h2>
+                    <p class="category-description">Custom built-in and freestanding bookshelves</p>
+                    <img src="Bookshelves.jpg" alt="Elegant wooden bookshelves" width="500" height="450" class="gallery-image">
+                </div>
+                
+                <!-- Gallery Category 4: Door & Window Frames -->
+                <div class="gallery-category">
+                    <h2>Door & Window Frames</h2>
+                    <p class="category-description">Precision-crafted door and window frames</p>
+                    <img src="Frames.jpg" alt="Custom wooden door and window frames" width="500" height="450" class="gallery-image">
+                </div>
+                
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer with contact information -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <!-- Contact links with mailto and tel protocols -->
+                    <p>Email: <a href="mailto:Khozacarpentry@gmail.com">Khozacarpentry@gmail.com</a></p>
+                    <p>Phone: <a href="tel:+27649572688">+27 64 957 2688</a></p>
+                </div>
+                <div class="footer-copyright">
+                    <!-- Note: Consider updating year to current year (2024/2025) -->
+                    <p>© 2026 Khoza's & Craft Carpentry. All rights reserved.</p>
+                    <p class="footer-slogan">Pure Wood, Pure Craft – Quality Carpentry for Your Home</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,165 @@
+<!-- contact.html (Contact Us Page) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>Background</title>
+<body style="background-color:Chocolate;">
+ <body>
+
+<!-- khoza-logo-compact.svg - Perfect for website headers -->
+<svg width="250" height="100" viewBox="0 0 250 100" xmlns="http://www.w3.org/2000/svg">
+  <!-- Compact background -->
+  <rect width="250" height="100" rx="12" fill="#2C1810" opacity="0.95"/>
+  
+  <!-- Wood grain (scaled down) -->
+  <defs>
+    <pattern id="woodgrain" width="25" height="25" patternUnits="userSpaceOnUse">
+      <path d="M0 12 Q6 9 12 14 Q18 12 25 11 Q22 15 16 14 Q12 17 3 15 Z" fill="#8B4513" opacity="0.4"/>
+    </pattern>
+  </defs>
+  <rect width="250" height="100" fill="url(#woodgrain)"/>
+  
+  <!-- Compact text - tighter spacing -->
+  <text x="125" y="38" text-anchor="middle" font-family="'Montserrat', sans-serif" 
+        font-size="18" font-weight="700" fill="#F4E4BC" letter-spacing="0.8">KHOZA'S</text>
+  <text x="125" y="50" text-anchor="middle" font-family="'Montserrat', sans-serif" 
+        font-size="16" font-weight="600" fill="#D4AF37" letter-spacing="0.4">&amp; CRAFT</text>
+  <text x="125" y="62" text-anchor="middle" font-family="'Montserrat', sans-serif" 
+        font-size="12" font-weight="500" fill="#F4E4BC" letter-spacing="0.2">CARPENTRY</text>
+  
+  <!-- Smaller tagline -->
+  <text x="125" y="78" text-anchor="middle" font-family="'Montserrat', sans-serif" 
+        font-size="9" font-weight="400" fill="#DEB887" letter-spacing="0.3">Pure Wood, Pure Craft</text>
+  
+  <!-- MINI HAMMER (scaled perfectly) -->
+  <g transform="translate(25, 25)">
+    <!-- Tiny hammer head -->
+    <rect x="0" y="0" width="14" height="6" rx="1" fill="#C0C0C0" stroke="#A9A9A9" stroke-width="0.8"/>
+    <path d="M18 0 Q21 2 20 6 Q18 7 16 7 L14 7 Z" fill="#C0C0C0" stroke="#A9A9A9" stroke-width="0.8"/>
+    <!-- Handle -->
+    <rect x="6" y="5" width="4" height="18" rx="2" fill="#8B4513"/>
+    <rect x="5" y="20" width="6" height="3" rx="1.5" fill="#D2691E"/>
+    <!-- Detail -->
+    <circle cx="3" cy="3" r="0.8" fill="#696969"/>
+  </g>
+</svg>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <navy>
+          <div class="button-list">
+            <button><a href="index.html">Home</a></button>
+            <button><a href="Services.html">Services</a></button>
+            <button><a href="Gallery.html">Gallery</a></button>
+            <button><a href="Contact_Us.html">Contact_Us</a></button>
+            <button><a href="About_Us.html">About_Us</a></button>
+                       
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Khoza's & Craft Carpentry</h1>
+                <p class="slogan">Pure Wood, Pure Craft</p>
+            </div>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Contact Us</h1>
+                <p>Get in touch with us for a free quote or consultation</p>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h2>Contact Information</h2>
+                        <div class="info-table">
+                            <div class="info-row">
+                                <div class="info-label">Phone:</div>
+                                <div class="info-value"><a href="tel:+27649572688">064 957 2688</a></div>
+                            </div>
+                            <div class="info-row">
+                                <div class="info-label">WhatsApp:</div>
+                                <div class="info-value"><a href="https://wa.me/27649572688">064 957 2688</a></div>
+                            </div>
+                            <div class="info-row">
+                                <div class="info-label">Email:</div>
+                                <div class="info-value"><a href="mailto:khozacarpentry@gmail.com">khozacarpentry@gmail.com</a></div>
+                            </div>
+                            <div class="info-row">
+                                <div class="info-label">Location:</div>
+                                <div class="info-value">Pretoria, South Africa</div>
+                            </div>
+                            <div class="info-row">
+                                <div class="info-label">Hours:</div>
+                                <div class="info-value">Mon-Fri: 8am – 5pm | Sat: 9am – 1pm | Sun: Closed</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form">
+                        <h2>Send Us an Enquiry</h2>
+                        <form id="enquiryForm" action="#" method="POST">
+                            <div class="form-group">
+                                <label for="name">Your Full Name *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Your Contact Number *</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Your Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="service">Service Needed *</label>
+                                <select id="service" name="service" required>
+                                    <option value="">Select a service</option>
+                                    <option value="Furniture">Furniture</option>
+                                    <option value="Kitchen">Kitchen</option>
+                                    <option value="Decking">Decking</option>
+                                    <option value="Repair">Repair</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Describe Your Project *</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Send Your Enquiry</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <p>Email: <a href="mailto:Khozacarpentry@gmail.com">Khozacarpentry@gmail.com</a></p>
+                    <p>Phone: <a href="tel:+27649572688">+27 64 957 2688</a></p>
+                </div>
+                <div class="footer-copyright">
+                    <p>© 2026 Khoza's & Craft Carpentry. All rights reserved.</p>
+                    <p class="footer-slogan">Pure Wood, Pure Craft – Quality Carpentry for Your Home</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('enquiryForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your enquiry! We will get back to you within 24 hours.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>

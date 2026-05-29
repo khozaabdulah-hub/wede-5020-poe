@@ -1,13 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+<title>Background</title>
+<body style="background-color:Chocolate;">
+ <body>
+<!-- khoza-logo-compact.svg - Perfect for website headers -->
+<svg width="250" height="100" viewBox="0 0 250 100" xmlns="http://www.w3.org/2000/svg">
+  <!-- Compact background -->
+  <rect width="250" height="100" rx="12" fill="#2C1810" opacity="0.95"/>
+  
+  <!-- Wood grain (scaled down) -->
+  <defs>
+    <pattern id="woodgrain" width="25" height="25" patternUnits="userSpaceOnUse">
+      <path d="M0 12 Q6 9 12 14 Q18 12 25 11 Q22 15 16 14 Q12 17 3 15 Z" fill="#8B4513" opacity="0.4"/>
+    </pattern>
+  </defs>
+  <rect width="250" height="100" fill="url(#woodgrain)"/>
+  
+  <!-- Compact text - tighter spacing -->
+  <text x="125" y="38" text-anchor="middle" font-family="'Montserrat', sans-serif" 
+        font-size="18" font-weight="700" fill="#F4E4BC" letter-spacing="0.8">KHOZA'S</text>
+  <text x="125" y="50" text-anchor="middle" font-family="'Montserrat', sans-serif" 
+        font-size="16" font-weight="600" fill="#D4AF37" letter-spacing="0.4">&amp; CRAFT</text>
+  <text x="125" y="62" text-anchor="middle" font-family="'Montserrat', sans-serif" 
+        font-size="12" font-weight="500" fill="#F4E4BC" letter-spacing="0.2">CARPENTRY</text>
+  
+  <!-- Smaller tagline -->
+  <text x="125" y="78" text-anchor="middle" font-family="'Montserrat', sans-serif" 
+        font-size="9" font-weight="400" fill="#DEB887" letter-spacing="0.3">Pure Wood, Pure Craft</text>
+  
+  <!-- MINI HAMMER (scaled perfectly) -->
+  <g transform="translate(25, 25)">
+    <!-- Tiny hammer head -->
+    <rect x="0" y="0" width="14" height="6" rx="1" fill="#C0C0C0" stroke="#A9A9A9" stroke-width="0.8"/>
+    <path d="M18 0 Q21 2 20 6 Q18 7 16 7 L14 7 Z" fill="#C0C0C0" stroke="#A9A9A9" stroke-width="0.8"/>
+    <!-- Handle -->
+    <rect x="6" y="5" width="4" height="18" rx="2" fill="#8B4513"/>
+    <rect x="5" y="20" width="6" height="3" rx="1.5" fill="#D2691E"/>
+    <!-- Detail -->
+    <circle cx="3" cy="3" r="0.8" fill="#696969"/>
+  </g>
+</svg>
+
+    <!-- Meta information for the webpage - ensures proper character encoding and responsive design -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    
+    <!-- Page title with company name and slogan - appears in browser tab -->
+    <title>Khoza's & Craft Carpentry - Pure Wood, Pure Craft</title>
+    
+    <!-- TODO: Add CSS link here for styling -->
+    <!-- <link rel="stylesheet" href="styles.css"> -->
 </head>
+
+<!-- FIXED: Removed invalid <navy> tag and malformed navigation. Created proper navigation structure -->
+<!-- Navigation should be inside <body> and use semantic <nav> element -->
 <body>
-    <h1>Blockchain Dlamini</h1>
-    <p>Some information about me</p>
-    <img src="img/img.jpg" alt="Image of a rotweiller">
+    <!-- Primary Navigation Menu - Fixed positioning and structure -->
+    <nav class="main-nav">
+        <div class="button-list">
+            <a href="index.html" class="nav-btn">Home</a>
+            <a href="Services.html" class="nav-btn">Services</a>
+            <a href="Gallery.html" class="nav-btn">Gallery</a>
+            <a href="Contact_Us.html" class="nav-btn">Contact Us</a>
+            <a href="About_Us.html" class="nav-btn">About Us</a>
+        </div>
+    </nav>
+
+    <!-- Main Header Section with Company Name and Slogan - Hero section -->
+    <header class="hero-header">
+        <h1>Khoza's Craft & Carpentry</h1>
+        <p><strong>Pure Wood, Pure Craft</strong></p>
+    </header>
+
+    <!-- Our Aim Section - What Drives Us - Core mission statement -->
+    <section class="mission-section">
+        <!-- Section heading for Our Purpose & Promise -->
+        <h2>What Drives Us – Our Purpose & Promise</h2>
+        
+        <!-- Main description paragraph - Introduces company philosophy -->
+        <p>
+            Our aim is to transform houses into homes through exceptional carpentry that blends 
+            traditional craftsmanship with modern functionality. We are committed to:
+        </p>
+        
+        <!-- Commitment list with checkmarks - Key selling points -->
+        <ul class="commitments-list">
+            <!-- FIXED: Corrected typo "ompleting" to "Completing" -->
+            <li>✓ Using sustainably sourced local timber</li>
+            <li>✓ Delivering honest, transparent pricing</li>
+            <li>✓ Completing every project on time and on budget</li>
+            <li>✓ Creating durable, beautiful woodwork that lasts generations</li>
+        </ul>
+    </section>
+
+    <!-- TODO: Image Gallery Section for TWO PICTURES as requested -->
+    <!-- 
+    <section class="gallery-preview">
+        <h2>Our Work</h2>
+        <div class="image-grid">
+            <img src="image1.jpg" alt="Custom kitchen cabinetry">
+            <img src="image2.jpg" alt="Beautiful wooden staircase">
+        </div>
+    </section>
+    -->
+
+    <!-- Footer Section with Contact Information - Bottom of page -->
+    <footer class="site-footer">
+        <!-- Contact Information Block -->
+        <div class="contact-info">
+            <p><strong>Email:</strong> <a href="mailto:Khozacarpentry@gmail.com">Khozacarpentry@gmail.com</a></p>
+            <p><strong>Phone:</strong> <a href="tel:+27649572688">+27 64 957 2688</a></p>
+        </div>
+        
+        <!-- Copyright Notice - Legal protection -->
+        <p>© 2026 Khoza's & Craft Carpentry. All rights reserved.</p>
+        
+        <!-- Footer Tagline - Final brand reinforcement -->
+        <p>Wood, Pure Craft – Quality Carpentry for Your Home</p>
+    </footer>
+
 </body>
 </html>
